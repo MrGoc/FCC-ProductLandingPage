@@ -4,18 +4,59 @@
 <head id="header">
     <meta charset="utf-8">
     <title>Product Landing Page</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact Gothic"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact Gothic">
     <style>
+        body {
+/*             height: 100%;
+            margin: 0;
+ */            font-family: "Didact Gothic", serif;
+        }        
+        .flex-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-link {
+            padding: 50px;
+        }
+        #heading-1 {
+            font-size: x-large;
+            font-weight: bold;
+        }
     </style>
-    <img id="header-img"/>
-    <nav id="nav-bar">
-        <a class="nav-link">First</a>
-        <a class="nav-link">Second</a>
-        <a class="nav-link">Third</a>
-    </nav>
+    <div class="flex-header">
+        <div>
+            <img id="header-img" src="images\ice-skates-logo.png" alt="Ice skates company"/>
+        </div>
+        <div>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#work">How it works</a>
+                <a class="nav-link" href="#price">Prices</a>
+            </nav>
+        </div>
+    </div>
 </head>
 
 <body>
+    <div id="heading-1">Handcrafted, home-made masterpieces</div>
+    <p/>
+    <p/>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="button" value="Get started">       
+    </form>
+
+    <div>
+        <div id="features">
+        </div>
+        <div id="work">
+            <iframe id="video" width="420" height="315" src="https://www.youtube.com/watch?v=23EfsN7vEOA"></iframe>
+        </div>
+        <div id="price">
+
+        </div>
+    </div>
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
