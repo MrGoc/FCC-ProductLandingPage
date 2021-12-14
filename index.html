@@ -11,13 +11,17 @@
             margin: 0;
  */            font-family: "Didact Gothic", serif;
         }        
+        ul {
+            list-style-type: none;
+        }
+        .nav-link{
+            display: inline;
+            padding: 50px;
+        }
         .flex-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-        .nav-link {
-            padding: 50px;
         }
         #heading-1 {
             font-size: x-large;
@@ -29,11 +33,18 @@
             width: auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
-         .features-child {
-             width: auto;
+        .features-child {
+            display: flex;
+            flex-direction: row;
+        }
+        .features-child-child {
+            padding-left: 30px;
+        }
+        .features-text {
+            inline-size: 150 px;
+            overflow-wrap: break-word;
         }
     </style>
     <div class="flex-header">
@@ -42,9 +53,11 @@
         </div>
         <div>
             <nav id="nav-bar">
-                <a class="nav-link" href="#features">Features</a>
-                <a class="nav-link" href="#work">How it works</a>
-                <a class="nav-link" href="#price">Prices</a>
+                <ul>
+                    <li class="nav-link"><a href="#features">Features</a></li>
+                    <li class="nav-link"><a href="#work">How it works</a></li>
+                    <li class="nav-link"><a href="#price">Prices</a></li>
+                </ul>
             </nav>
         </div>
     </div>
@@ -64,31 +77,47 @@
     </div>
 
     <div id="main-body">
-        <div id="features">
+        <section id="features">
             <div class="features-child">
-                <img src="" alt="Premium Materials">
-                <p>Premium Materials
-                    <br/>Our ice skates use the best calfskin. This will increase the longevity of your purchase.
-                </p>
+                <div class="features-child-child">
+                    <img src="" alt="Premium Materials">
+                </div>
+                <div class="features-child-child">
+                    <h2>Premium Materials</h2>
+                    <p class="features-text">
+                        Our ice skates use the best calfskin. This will increase the longevity of your purchase.
+                    </p>
+                </div>
             </div>
             <div class="features-child">
-                <img src="" alt="Fast Shipping">
-                <p>Fast Shipping
-                    <br/>We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
-                </p>
+                <div class="features-child-child">
+                    <img src="" alt="Fast Shipping" class="features-child-child">
+                </div>
+                <div class="features-child-child">
+                    <h2>Fast Shipping</h2>
+                    <p class="features-text">
+                        We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
+                </div>
             </div>
             <div class="features-child">
-                <img src="" alt="Quality Assurance">
-                <p>Quality Assurance
-                    <br/>For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.</p>
+                <div class="features-child-child">
+                    <img src="" alt="Quality Assurance">
+                </div>
+                <div class="features-child-child">
+                    <h2>Quality Assurance</h2>
+                    <p class="features-text">
+                        For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div id="work">
+        </section>
+        <section id="work">
             <iframe id="video" width="420" height="315" src="https://www.youtube.com/watch?v=23EfsN7vEOA"></iframe>
-        </div>
-        <div id="price">
+        </section>
+        <section id="price">
 
-        </div>
+        </section>
     </div>
 </body>
 
