@@ -1,53 +1,44 @@
 <!DOCTYPE HTML>
 <html>
 
-<head id="header">
+<head>
     <meta charset="utf-8">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact Gothic">
     <style>
+        html {
+            box-sizing: border-box;
+        }
         body {
 /*             height: 100%;
             margin: 0;
  */            font-family: "Didact Gothic", serif;
-        }        
-        ul {
-            list-style-type: none;
         }
-        .nav-link{
-            display: inline;
-            padding: 50px;
-        }
-        .flex-header {
+        #header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        #heading-1 {
-            font-size: x-large;
-            font-weight: bold;
-            width: auto;
-            text-align: center;
-        }
-        #features {
-            width: auto;
+        #nav-bar {
             display: flex;
-            flex-direction: column;
+            list-style: none;
+            justify-content: space-around;
             align-items: center;
         }
-        .features-child {
-            display: flex;
-            flex-direction: row;
-        }
-        .features-child-child {
-            padding-left: 30px;
-        }
-        .features-text {
-            inline-size: 150 px;
-            overflow-wrap: break-word;
+        .nav-link {
+            display: inline-block;
+            padding: 20px;
+        }   
+        @media screen and (max-width: 700px) {
+            #header {
+                flex-wrap: wrap;
+            }
         }
     </style>
-    <div class="flex-header">
+</head>
+
+<body>
+    <div id="header">
         <div>
             <img id="header-img" src="images\ice-skates-logo.png" alt="Ice skates company"/>
         </div>
@@ -61,10 +52,7 @@
             </nav>
         </div>
     </div>
-</head>
-
-<body>
-    <div id="heading-1">
+<!--     <div id="heading-1">
         <div>
             <p>Handcrafted, home-made masterpieces</p>
         </div>
@@ -118,7 +106,7 @@
         <section id="price">
 
         </section>
-    </div>
+    </div> -->
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
