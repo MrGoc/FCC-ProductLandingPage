@@ -8,6 +8,7 @@
     <style>
         html {
             box-sizing: border-box;
+            scroll-padding-top: 150px;
         }
         body {
            font-family: "Didact Gothic", serif;
@@ -62,12 +63,51 @@
             overflow-wrap: break-word;
             inline-size: 500px;
         }
+        #price {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+        }
+        .price-item {
+            border: thick double orange;
+            width: 200px;
+        }
+        .price-item-header {
+            font-size: larger;
+            font-weight: bold;
+            background-color: pink;
+            width: 100%;
+            margin-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .price-item-button {
+            font-weight: bold;
+            background-color: yellow;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .price-item-button:hover {
+             background-color: turquoise;
+        }        
         @media screen and (max-width: 700px) {
             #header {
                 flex-wrap: wrap;
             }
             .features-text {
                 inline-size: 300px;    
+            }
+            #price {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -84,65 +124,96 @@
                     <li class="nav-link"><a href="#price">Prices</a></li>
                 </ul>
             </nav>
-        
-    </div>
-    <div id="main-body">
-        <div id="heading-1">
-            <div>
-                <h3>Handcrafted, home-made masterpieces</h3>
-            </div>
-            <div>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                    <input type="button" id="submit" name="submit" value="Get started">
-                </form>
-            </div>
         </div>
-        <br/>
-        <br/>
-        <section id="features">
-            <div class="features-child">
-                <img class="img-feature" src="images/fire-solid.svg" alt="Premium Materials">
-                <div class="features-child-child">
-                    <h3>Premium Materials</h3>
-                    <p class="features-text">
-                        Our ice skates use the best calfskin. This will increase the longevity of your purchase.
-                    </p>
+        <div id="main-body">
+            <div id="heading-1">
+                <div>
+                    <h3>Handcrafted, home-made masterpieces</h3>
+                </div>
+                <div>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <input type="button" id="submit" name="submit" value="Get started">
+                    </form>
                 </div>
             </div>
-             <div class="features-child">
-                <img class="img-feature" src="images/shipping-fast-solid.svg" alt="Fast Shipping">
-                <div class="features-child-child">
-                    <h3>Fast Shipping</h3>
-                    <p class="features-text">
-                        We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
-                    </p>
+            <br/>
+            <br/>
+            <section id="features">
+                <div class="features-child">
+                    <img class="img-feature" src="images/fire-solid.svg" alt="Premium Materials">
+                    <div class="features-child-child">
+                        <h3>Premium Materials</h3>
+                        <p class="features-text">
+                            Our ice skates use the best calfskin. This will increase the longevity of your purchase.
+                        </p>
+                    </div>
                 </div>
-            </div>
-           <div class="features-child">
-                <img class="img-feature" src="images/battery-full-solid.svg" alt="Quality Assurance">
-                <div class="features-child-child">
-                    <h3>Quality Assurance</h3>
-                    <p class="features-text">
-                        For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.
-                    </p>
+                 <div class="features-child">
+                    <img class="img-feature" src="images/shipping-fast-solid.svg" alt="Fast Shipping">
+                    <div class="features-child-child">
+                        <h3>Fast Shipping</h3>
+                        <p class="features-text">
+                            We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <br/>
-        <br/>
-    
-        <section id="work">
-            <div style="display: flex; justify-content: center;">
-                <iframe id="video" width="400" height="300"  src="https://www.youtube.com/embed/ke0iusvydl8"></iframe>
-            </div>
-        </section>
-        <br/>
-        <br/>
-        <section id="price">
-
-        </section>
-    </div>
+               <div class="features-child">
+                    <img class="img-feature" src="images/battery-full-solid.svg" alt="Quality Assurance">
+                    <div class="features-child-child">
+                        <h3>Quality Assurance</h3>
+                        <p class="features-text">
+                            For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <br/>
+            <br/>
+        
+            <section id="work">
+                <div style="display: flex; justify-content: center;">
+                    <iframe id="video" width="400" height="300"  src="https://www.youtube.com/embed/ke0iusvydl8" allow="encrypted-media"></iframe>
+                </div>
+            </section>
+            <br/>
+            <br/>
+            <section id="price">
+                <div class="price-item">
+                    <div class="price-item-header">Small ice skates                    
+                    </div>
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.<br/>
+                    Lorem ipsum.<br/>
+                    Lorem ipsum dolor.<br/>
+                    Lorem ipsum.</p>
+                    <br/>
+                    <div class="price-item-button">SELECT</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-header">Medium ice skates                    
+                    </div>
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.<br/>
+                    Lorem ipsum.<br/>
+                    Lorem ipsum dolor.<br/>
+                    Lorem ipsum.</p>
+                    <br/>
+                    <div class="price-item-button">SELECT</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-item-header">Big ice skates                    
+                    </div>
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.<br/>
+                    Lorem ipsum.<br/>
+                    Lorem ipsum dolor.<br/>
+                    Lorem ipsum.</p>
+                    <br/>
+                    <div class="price-item-button">SELECT</div>
+                </div>
+            </section>
+        </div>
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
