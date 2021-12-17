@@ -28,7 +28,7 @@
             align-items: center;
             margin-right: 10px;
         }
-        .nav-link {
+        .nav-link-li {
             display: inline-block;
             padding: 20px;
         }
@@ -115,105 +115,104 @@
 
 <body>
     <div id="header">
-        <img id="header-img" src="images\ice-skates-logo.png" alt="Ice skates company"/>
-        
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link"><a href="#features">Features</a></li>
-                    <li class="nav-link"><a href="#work">How it works</a></li>
-                    <li class="nav-link"><a href="#price">Prices</a></li>
-                </ul>
-            </nav>
+        <img id="header-img" src="https://raw.githubusercontent.com/MrGoc/FrontEndDev-ProductLandingPage/master/images/ice-skates-logo.png" alt="Ice skates company"/>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link-li"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-link-li"><a class="nav-link" href="#work">How it works</a></li>
+                <li class="nav-link-li"><a class="nav-link" href="#price">Prices</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="main-body">
+        <div id="heading-1">
+            <div>
+                <h3>Handcrafted, home-made masterpieces</h3>
+            </div>
+            <div>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <input type="submit" id="submit" name="submit" value="Get started">
+                </form>
+            </div>
         </div>
-        <div id="main-body">
-            <div id="heading-1">
-                <div>
-                    <h3>Handcrafted, home-made masterpieces</h3>
-                </div>
-                <div>
-                    <form id="form" action="https://www.freecodecamp.com/email-submit">
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                        <input type="button" id="submit" name="submit" value="Get started">
-                    </form>
+        <br/>
+        <br/>
+        <section id="features">
+            <div class="features-child">
+                <img class="img-feature" src="https://raw.githubusercontent.com/MrGoc/FrontEndDev-ProductLandingPage/03347eed376075bccb28aaea64d767d1ab44e0f2/images/fire-solid.svg" alt="Premium Materials">
+                <div class="features-child-child">
+                    <h3>Premium Materials</h3>
+                    <p class="features-text">
+                        Our ice skates use the best calfskin. This will increase the longevity of your purchase.
+                    </p>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <section id="features">
                 <div class="features-child">
-                    <img class="img-feature" src="images/fire-solid.svg" alt="Premium Materials">
-                    <div class="features-child-child">
-                        <h3>Premium Materials</h3>
-                        <p class="features-text">
-                            Our ice skates use the best calfskin. This will increase the longevity of your purchase.
-                        </p>
-                    </div>
+                <img class="img-feature" src="https://raw.githubusercontent.com/MrGoc/FrontEndDev-ProductLandingPage/03347eed376075bccb28aaea64d767d1ab44e0f2/images/shipping-fast-solid.svg" alt="Fast Shipping">
+                <div class="features-child-child">
+                    <h3>Fast Shipping</h3>
+                    <p class="features-text">
+                        We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
+                    </p>
                 </div>
-                 <div class="features-child">
-                    <img class="img-feature" src="images/shipping-fast-solid.svg" alt="Fast Shipping">
-                    <div class="features-child-child">
-                        <h3>Fast Shipping</h3>
-                        <p class="features-text">
-                            We make sure you recieve your ice skates as soon as we have finished making it. We also provide free returns if you are not satisfied.
-                        </p>
-                    </div>
+            </div>
+            <div class="features-child">
+                <img class="img-feature" src="https://raw.githubusercontent.com/MrGoc/FrontEndDev-ProductLandingPage/03347eed376075bccb28aaea64d767d1ab44e0f2/images/battery-full-solid.svg" alt="Quality Assurance">
+                <div class="features-child-child">
+                    <h3>Quality Assurance</h3>
+                    <p class="features-text">
+                        For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.
+                    </p>
                 </div>
-               <div class="features-child">
-                    <img class="img-feature" src="images/battery-full-solid.svg" alt="Quality Assurance">
-                    <div class="features-child-child">
-                        <h3>Quality Assurance</h3>
-                        <p class="features-text">
-                            For every purchase you make, we will ensure there are no damages or faults and we will check and test ice skates.
-                        </p>
-                    </div>
+            </div>
+        </section>
+        <br/>
+        <br/>
+
+        <section id="work">
+            <div style="display: flex; justify-content: center;">
+                <iframe id="video" width="400" height="300"  src="https://www.youtube.com/embed/ke0iusvydl8" allow="encrypted-media"></iframe>
+            </div>
+        </section>
+        <br/>
+        <br/>
+        <section id="price">
+            <div class="price-item">
+                <div class="price-item-header">Small ice skates                    
                 </div>
-            </section>
-            <br/>
-            <br/>
-        
-            <section id="work">
-                <div style="display: flex; justify-content: center;">
-                    <iframe id="video" width="400" height="300"  src="https://www.youtube.com/embed/ke0iusvydl8" allow="encrypted-media"></iframe>
+                <h3>$600</h3>
+                <p>Lorem ipsum.<br/>
+                Lorem ipsum.<br/>
+                Lorem ipsum dolor.<br/>
+                Lorem ipsum.</p>
+                <br/>
+                <div class="price-item-button">SELECT</div>
+            </div>
+            <div class="price-item">
+                <div class="price-item-header">Medium ice skates                    
                 </div>
-            </section>
-            <br/>
-            <br/>
-            <section id="price">
-                <div class="price-item">
-                    <div class="price-item-header">Small ice skates                    
-                    </div>
-                    <h3>$600</h3>
-                    <p>Lorem ipsum.<br/>
-                    Lorem ipsum.<br/>
-                    Lorem ipsum dolor.<br/>
-                    Lorem ipsum.</p>
-                    <br/>
-                    <div class="price-item-button">SELECT</div>
+                <h3>$900</h3>
+                <p>Lorem ipsum.<br/>
+                Lorem ipsum.<br/>
+                Lorem ipsum dolor.<br/>
+                Lorem ipsum.</p>
+                <br/>
+                <div class="price-item-button">SELECT</div>
+            </div>
+            <div class="price-item">
+                <div class="price-item-header">Big ice skates                    
                 </div>
-                <div class="price-item">
-                    <div class="price-item-header">Medium ice skates                    
-                    </div>
-                    <h3>$900</h3>
-                    <p>Lorem ipsum.<br/>
-                    Lorem ipsum.<br/>
-                    Lorem ipsum dolor.<br/>
-                    Lorem ipsum.</p>
-                    <br/>
-                    <div class="price-item-button">SELECT</div>
-                </div>
-                <div class="price-item">
-                    <div class="price-item-header">Big ice skates                    
-                    </div>
-                    <h3>$900</h3>
-                    <p>Lorem ipsum.<br/>
-                    Lorem ipsum.<br/>
-                    Lorem ipsum dolor.<br/>
-                    Lorem ipsum.</p>
-                    <br/>
-                    <div class="price-item-button">SELECT</div>
-                </div>
-            </section>
-        </div>
+                <h3>$900</h3>
+                <p>Lorem ipsum.<br/>
+                Lorem ipsum.<br/>
+                Lorem ipsum dolor.<br/>
+                Lorem ipsum.</p>
+                <br/>
+                <div class="price-item-button">SELECT</div>
+            </div>
+        </section>
+    </div>
 </body>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
